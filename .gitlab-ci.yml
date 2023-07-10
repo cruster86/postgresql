@@ -5,7 +5,7 @@ spilo:
   stage: build-push
   script:
     - docker login "${CI_REGISTRY}" -u "${CI_REGISTRY_USER}" -p "${CI_REGISTRY_PASSWORD}"
-    - docker build -t registry.sirius.online/cheops-edu/video-hosting/hosting:v2.0 .
+    - docker build -t registry.sirius.online/infra/postgresql/spilo-15:3.0-p1-ru .
     - docker push registry.sirius.online/infra/postgresql/spilo-15:3.0-p1-ru
   tags:
     - kube-univ-new
