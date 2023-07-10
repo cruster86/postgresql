@@ -1,4 +1,4 @@
-FROM registry.opensource.zalan.do/acid/spilo-12:1.6-p2
+FROM registry.sirius.online/infra/postgresql/spilo-15:3.0-p1-ru
 
 RUN apt-get update &&\
     apt-get install -y --reinstall locales &&\
